@@ -1,0 +1,21 @@
+﻿
+@model FrontEndActionItem.Models.Entries 
+<br />
+<br />
+<br />
+<table>
+    <tr>
+        <form asp-action="Index" method="post">
+            <td>Enter a Number N: </td>
+            <td>
+                <label asp-for="number"></label>
+                <input id="number" name="number" asp-for="number" type="text" />
+                <button type="submit">Submit</button>
+            </td>
+        </form>
+    </tr>
+    <tr>
+        <td>The series is </td>
+        <td>@ViewBag.Message</td>
+    </tr>
+</table>
